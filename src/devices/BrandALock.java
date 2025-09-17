@@ -1,11 +1,19 @@
 package devices;
 
-import java.io.IOException;
+public class BrandALock implements Lock {
+    private double batteryConsumption;
 
-public class BrandALock extends AbstractLock {
+    public BrandALock(double initialBatteryConsumption) { this.batteryConsumption = initialBatteryConsumption; }
+
     @Override
-    protected double readUsageFromFile() throws IOException {
-        // Simulated external DB/file for Brand A lock
-        return readDoubleFromFile("data/brandA_lock.txt");
-    }
+    public void lock() { System.out.println("BrandALock locked."); }
+
+    @Override
+    public void unlock() { System.out.println("BrandALock unlocked."); }
+
+    @Override
+    public double getBatteryConsumption() { return batteryConsumption; }
+
+    @Override
+    public void setBatteryConsumption(double percentPerMonth) { this.batteryConsumption = percentPerMonth; }
 }

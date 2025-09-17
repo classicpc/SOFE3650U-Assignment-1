@@ -1,11 +1,19 @@
 package devices;
 
-import java.io.IOException;
+public class BrandBBulb implements Bulb {
+    private double powerUsage;
 
-public class BrandBBulb extends AbstractBulb {
+    public BrandBBulb(double initialPowerUsage) { this.powerUsage = initialPowerUsage; }
+
     @Override
-    protected double readUsageFromFile() throws IOException {
-        // Simulated external DB/file for Brand B bulb
-        return readDoubleFromFile("data/brandB_bulb.txt");
-    }
+    public void turnOn() { System.out.println("BrandBBulb turned on."); }
+
+    @Override
+    public void turnOff() { System.out.println("BrandBBulb turned off."); }
+
+    @Override
+    public double getPowerUsage() { return powerUsage; }
+
+    @Override
+    public void setPowerUsage(double watts) { this.powerUsage = watts; }
 }

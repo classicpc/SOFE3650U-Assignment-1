@@ -1,15 +1,19 @@
 package devices;
 
-import java.io.IOException;
+public class BrandABulb implements Bulb {
+    private double powerUsage;
 
-/**
- * Concrete Brand A Bulb. Implements the factory method readUsageFromFile()
- * to fetch Brand A bulb power (simulated external DB via data file).
- */
-public class BrandABulb extends AbstractBulb {
+    public BrandABulb(double initialPowerUsage) { this.powerUsage = initialPowerUsage; }
+
     @Override
-    protected double readUsageFromFile() throws IOException {
-        // Simulated external DB/file for Brand A bulb
-        return readDoubleFromFile("data/brandA_bulb.txt");
-    }
+    public void turnOn() { System.out.println("BrandABulb turned on."); }
+
+    @Override
+    public void turnOff() { System.out.println("BrandABulb turned off."); }
+
+    @Override
+    public double getPowerUsage() { return powerUsage; }
+
+    @Override
+    public void setPowerUsage(double watts) { this.powerUsage = watts; }
 }
