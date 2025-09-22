@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Home Devices Assignment (Abstract Factory & Factory Method)
 
 ## Repository Structure
@@ -52,3 +53,6 @@ Replace `[value from usage.csv]` with the actual values from your `data/usage.cs
 ## Screenshots
 
 Paste screenshots of your test output here after running the test drivers.
+=======
+
+>>>>>>> c0e50fdab35dc69bc34158b278cdbf484e5f1377
