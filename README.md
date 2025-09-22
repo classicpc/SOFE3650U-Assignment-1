@@ -4,7 +4,7 @@ This assignment demonstrates the use of the Abstract Factory and Factory Method 
 
 ## UML Diagram
 
-![Smart_Devices_Factory_UML](uml/smart_devices_factory_uml.jpg)
+![Smart_Devices_Factory_UML](uml/smart_devices_factory_uml.png)
 
 ## Repository Structure
 
