@@ -1,19 +1,20 @@
 package devices;
 
+// Brand B's implementation of a smart bulb
 public class BrandBBulb implements Bulb {
-    private double powerUsage;
+    private double powerUsage; // stores power usage
 
-    public BrandBBulb(double initialPowerUsage) { this.powerUsage = initialPowerUsage; }
-
-    @Override
-    public void turnOn() { System.out.println("BrandBBulb turned on."); }
+    public BrandBBulb(double initialPowerUsage) { this.powerUsage = initialPowerUsage; } // constructor
 
     @Override
-    public void turnOff() { System.out.println("BrandBBulb turned off."); }
+    public void turnOn() { System.out.println("BrandBBulb turned on."); } // print on
 
     @Override
-    public double getPowerUsage() { return powerUsage; }
+    public void turnOff() { System.out.println("BrandBBulb turned off."); } // print off
 
     @Override
-    public void setPowerUsage(double watts) { this.powerUsage = watts; }
+    public double getPowerUsage() { return powerUsage; } // get power usage
+
+    @Override
+    public void setPowerUsage(double watts) { this.powerUsage = watts; } // set power usage
 }

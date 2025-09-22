@@ -1,20 +1,22 @@
 package devices;
 
+// Test class for Brand A devices only
 public class TestDriver {
     public static void main(String[] args) {
-        DeviceFactory fa = new BrandAFactory();
-        DeviceFactory fb = new BrandBFactory();
+        System.out.println("   Brand A Smart Devices Demo  ");
 
-        Bulb aBulb = fa.createBulbWithUsage();
-        Lock aLock = fa.createLockWithUsage();
+        DeviceFactory brandAFactory = new BrandAFactory(); // Brand A factory
 
-        System.out.println("Demo: Brand A devices");
-        aBulb.turnOn();
-        System.out.println("Power: " + aBulb.getPowerUsage() + " W");
-        aBulb.turnOff();
+        System.out.println("\n--- Bulb ---");
+        Bulb bulb = brandAFactory.createBulbWithUsage(); // Brand A bulb
+        bulb.turnOn();
+        System.out.printf("Power usage: %.2f W\n", bulb.getPowerUsage());
+        bulb.turnOff();
 
-        aLock.lock();
-        System.out.println("Battery %/month: " + aLock.getBatteryConsumption());
-        aLock.unlock();
+        System.out.println("\n--- Lock ---");
+        Lock lock = brandAFactory.createLockWithUsage(); // Brand A lock
+        lock.lock();
+        System.out.printf("Battery consumption: %.2f %%/month\n", lock.getBatteryConsumption());
+        lock.unlock();
     }
 }

@@ -1,19 +1,20 @@
 package devices;
 
+// Brand A's implementation of a smart lock
 public class BrandALock implements Lock {
-    private double batteryConsumption;
+    private double batteryConsumption; // stores battery usage
 
-    public BrandALock(double initialBatteryConsumption) { this.batteryConsumption = initialBatteryConsumption; }
-
-    @Override
-    public void lock() { System.out.println("BrandALock locked."); }
+    public BrandALock(double initialBatteryConsumption) { this.batteryConsumption = initialBatteryConsumption; } // constructor
 
     @Override
-    public void unlock() { System.out.println("BrandALock unlocked."); }
+    public void lock() { System.out.println("BrandALock locked."); } // print locked
 
     @Override
-    public double getBatteryConsumption() { return batteryConsumption; }
+    public void unlock() { System.out.println("BrandALock unlocked."); } // print unlocked
 
     @Override
-    public void setBatteryConsumption(double percentPerMonth) { this.batteryConsumption = percentPerMonth; }
+    public double getBatteryConsumption() { return batteryConsumption; } // get battery usage
+
+    @Override
+    public void setBatteryConsumption(double percentPerMonth) { this.batteryConsumption = percentPerMonth; } // set battery usage
 }

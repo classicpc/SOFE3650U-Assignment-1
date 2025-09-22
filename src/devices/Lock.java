@@ -1,8 +1,9 @@
 package devices;
 
+// Interface for smart locks
 public interface Lock {
-    void lock();
-    void unlock();
-    double getBatteryConsumption();
-    void setBatteryConsumption(double percentPerMonth);
+    void lock(); // locks the device
+    void unlock(); // unlocks the device
+    double getBatteryConsumption(); // returns battery usage
+    void setBatteryConsumption(double percentPerMonth); // sets battery usage
 }
