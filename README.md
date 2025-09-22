@@ -9,7 +9,18 @@ This assignment demonstrates the use of the Abstract Factory and Factory Method 
 ## Repository Structure
 
 - `src/` — Source code for the smart device factories and products
-  - `devices/` — Java classes for device interfaces, concrete device implementations, abstract and concrete factories, and the usage reader utility
+
+  - `devices/` — Java classes for device interfaces, concrete device implementations, abstract and concrete factories, and the usage reader utility:
+    - `SmartDeviceFactory.java` (interface)
+    - `SmartBulb.java` (interface)
+    - `SmartLock.java` (interface)
+    - `BrandAFactory.java` (Brand A factory)
+    - `BrandBFactory.java` (Brand B factory)
+    - `BrandA_SmartBulb.java` (Brand A bulb)
+    - `BrandB_SmartBulb.java` (Brand B bulb)
+    - `BrandA_SmartLock.java` (Brand A lock)
+    - `BrandB_SmartLock.java` (Brand B lock)
+    - `UsageReader.java` (utility for reading usage values)
 - `data/usage.csv` — CSV file containing usage values for each brand/device (e.g., power usage for bulbs, battery consumption for locks)
 - `tests/` — Test drivers to demonstrate and verify the design
   - `TestDevices.java` — Main test driver for both brands
