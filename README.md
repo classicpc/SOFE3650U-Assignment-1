@@ -2,6 +2,10 @@
 
 This assignment demonstrates the use of the Abstract Factory and Factory Method design patterns to create smart home devices (bulbs and locks) for different brands, with usage values loaded from an external CSV file.
 
+## UML Diagram
+
+![UML Diagram](<WhatsApp Image 2025-09-22 at 18.25.23_6766a3d2.jpg>)
+
 ## Repository Structure
 
 - `src/` — Source code for the smart device factories and products
