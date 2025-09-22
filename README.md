@@ -1,4 +1,4 @@
-# Smart Home Devices Assignment
+# Smart Devices Factory Assignment
 
 This assignment demonstrates the use of the Abstract Factory and Factory Method design patterns to create smart home devices (bulbs and locks) for different brands, with usage values loaded from an external CSV file.
 
