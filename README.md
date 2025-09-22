@@ -4,7 +4,7 @@ This assignment demonstrates the use of the Abstract Factory and Factory Method 
 
 ## UML Diagram
 
-![UML Diagram](<WhatsApp Image 2025-09-22 at 18.25.23_6766a3d2.jpg>)
+![Smart_Devices_Factory_UML](uml/smart_devices_factory_uml.jpg)
 
 ## Repository Structure
 
