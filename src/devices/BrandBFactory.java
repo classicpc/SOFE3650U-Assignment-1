@@ -1,13 +1,14 @@
 package devices;
 
-// Factory for Brand B devices
-public class BrandBFactory extends DeviceFactory {
+// Factory for Brand B devices (implements SmartDeviceFactory)
+public class BrandBFactory implements SmartDeviceFactory {
     @Override
-    protected String brandName() { return "BrandB"; } // returns brand name
+    public SmartBulb createSmartBulb() {
+        return new BrandB_SmartBulb(0.0f);
+    }
 
     @Override
-    protected Bulb makeBulb() { return new BrandBBulb(0.0); } // makes Brand B bulb
-
-    @Override
-    protected Lock makeLock() { return new BrandBLock(0.0); } // makes Brand B lock
+    public SmartLock createSmartLock() {
+        return new BrandB_SmartLock(0.0f);
+    }
 }
