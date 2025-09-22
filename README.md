@@ -38,14 +38,24 @@ This assignment demonstrates the use of the Abstract Factory and Factory Method 
 
 ## Test Methods
 
-- `TestDevices.java`:
-  - Demonstrates creation and usage of both Brand A and Brand B devices.
-  - Tests:
-    - Bulb from Brand A (turn on/off, print power usage)
-    - Lock from Brand B (lock/unlock, print battery consumption)
-    - Also prints usage for Brand B Bulb and Brand A Lock
-- `TestDriver.java`:
-  - Demonstrates creation and usage of Brand A devices only (bulb and lock)
+
+### TestDevices.java
+
+- **Purpose:** Demonstrates and verifies the creation and usage of smart devices (bulbs and locks) for both Brand A and Brand B using the Abstract Factory pattern.
+- **Tests performed:**
+  - Creates a Brand A smart bulb, turns it on/off, and prints its power usage.
+  - Creates a Brand B smart lock, locks/unlocks it, and prints its battery consumption.
+  - Also demonstrates usage for a Brand B smart bulb and a Brand A smart lock.
+- **Coverage:** Ensures that both brands’ factories and devices work as expected, and that usage values are correctly loaded and displayed.
+
+### TestDriver.java
+
+- **Purpose:** Provides a simpler test focused on Brand A devices.
+- **Tests performed:**
+  - Creates a Brand A smart bulb and lock.
+  - Demonstrates turning the bulb on/off and locking/unlocking the lock.
+  - Prints usage values for both devices.
+- **Coverage:** Confirms that the Brand A factory and its products function correctly.
 
 ## How to Run
 
